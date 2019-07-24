@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>largest</title>
+    <script>
+        function gn();
+        {
+            n=document.getElementById("no").value
+            na=document.getElementById("n1").value
+            if(n>na)
+            {
+                document.getElementById("mum").innerHTML=n;
+            }
+            else
+            {
+                document.getElementById("mum").innerHTML=na;
+            }
+        }
+    </script>
+</head>
+<body>
+        <form >
+                <table class="table">
+                        <tr>
+                            <td>enter no</td>
+                            <td><input type="text" class="form-control" id="no"></td>
+                            <td><input type="text" class="form-control" id="n1"></td>
+                            <div><td id="num"></td></div>
+                        </tr>
+                       
+                        <tr>
+                          <td><button type="button" class="btn btn-success" onclick="gn();">submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+    
+</body>
+</html>
