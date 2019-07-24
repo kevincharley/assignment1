@@ -6,29 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>login</title>
-    <link rel="stylesheet" href="./assignment1/css/vs.css">
-    <style>
-        table{
-            border: 2px solid black
+    <link rel="stylesheet" href="./css/kk.css">
+    <script>
+        function gn()
+        {
+            n=document.getElementById("name").value
+            document.getElementById("nam").innerHTML=n
+            p=document.getElementById("pass").value
+            document.getElementById("pa").innerHTML=p
+            
         }
-    </style>
+        function nen()
+        {
+            r=document.getElementById("nn").value
+            document.getElementById("nnn").innerHTML=r
+            s=document.getElementById("us").value
+            document.getElementById("use").innerHTML=s
+            t=document.getElementById("pw").value
+            document.getElementById("psa").innerHTML=t
+            u=document.getElementById("branch").value
+            document.getElementById("br").innerHTML=u
+          
+        } 
+    </script>
 </head>
 <body class="bk">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+        <li class="navbar-item active">
+            <a class="nav-link" href="asssig2.html">assignmentfull</a>
+        </li>
+        <li class="navbar-item">
+            <a class="nav-link" href="data.html">assignment1</a>
+        </li>
+    </ul>
+</nav>
+
+    <br>
+    <form>
     <div class="container">
         <div class="row">
-                <div class="col col-12 col-sm-6"> <table class="table">
+                <div class="col col-12 col-sm-6"> 
+                    <table class="table">
                         <tr>
                             <td>username</td>
-                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control" id="name"></td>
+                            <div><td id="nam"></td></div>
                         </tr><TR>
                         <td>password</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control" id="pass"></td>
+                        <div><td id="pa"></td></div>
                         </tr>
                         <tr>
                                
                                 <td><input type="button" value="reset" class="btn btn-warning"></td>
                                 
-                                <td><input type="button" value="submit" class="btn btn-primary"></td>
+                                <td><button type="button" class="btn btn-success" onclick="gn();">submit</button></td>
                         </tr>
                     </table>
                     </div>
@@ -41,10 +74,11 @@
                     <table class="table">
                         <tr>
                             <td>name</td>
-                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control" id="nn"></td>
+                            <div><td id="nnn"></td></div>
                         </tr>
                         <tr><td>district</td>
-                        <td><select class="form-control" name="district" id="branch1">
+                        <td><select class="form-control" name="district" id="branch">
                             <option value="alp">alp</option>
                             <option value="idk">idk</option>
                             <option value="ptn">ptn</option>
@@ -59,26 +93,31 @@
                             <option value="plkd">plkd</option>
                             <option value="kol">kol</option>
                             <option value="mal">mal</option>
-                        </select></td></tr>
+                        </select></td>
+                    <div><td id="br"></td></div>
+                </tr>
                         <tr>
                         <td><input type="radio" name="gender" id="male">male</td>
+                    
                     <td><input type="radio" name="gender" id="female">female</td></tr>
                 
                         
                         <tr>
                                 <td>username</td>
-                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control" id="us"></td>
+                                <div><td id="use"></td></div>
                             </tr>
                             <tr>
                             <td>password</td>
-                            <td><input type="text" class="form-control" ></td>
+                            <td><input type="text" class="form-control" id="pw"></td>
+                            <div><td id="psa"></td></div>
                         </tr>
                                 
                         <tr>
                                 <td>confirm <input type="checkbox"></td>
                             </tr>   
                             <tr>
-                                    <td><input type="button" value="submit" class="btn btn-primary"></td>
+                                    <td><button type="button" class="btn btn-warning" onclick="nen();">submit</button></td>
                                
                                 <td><input type="button" value="register" class="btn btn-success"></td></tr>
                                     
@@ -88,5 +127,6 @@
                         
                     </div>
                 </div>
+            </form>
 </body>
 </html>
