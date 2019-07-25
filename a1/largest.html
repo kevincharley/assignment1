@@ -7,17 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>largest</title>
     <script>
-        function gn();
+        function gn()
         {
-            n=document.getElementById("no").value
-            na=document.getElementById("n1").value
-            if(n>na)
+           var n=document.getElementById("no").value;
+           var y=document.getElementById("n1").value;
+
+           var b=parseInt(n);
+           var a=parseInt(y);
+            if(b>a)
             {
-                document.getElementById("mum").innerHTML=n;
+                document.getElementById("num").innerHTML=n;
             }
             else
             {
-                document.getElementById("mum").innerHTML=na;
+                document.getElementById("num").innerHTML=y;
             }
         }
     </script>
@@ -33,7 +36,7 @@
                         </tr>
                        
                         <tr>
-                          <td><button type="button" class="btn btn-success" onclick="gn();">submit</button></td>
+                          <td><button type="button" class="btn btn-success" onclick="gn();">largest</button></td>
                         </tr>
                     </table>
                 </form>
