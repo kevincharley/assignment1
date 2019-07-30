@@ -1,0 +1,32 @@
+jQuery(document).ready(function($) {
+    // Scroll to the desired section on click
+    // Make sure to add the `data-scroll` attribute to your `<a>` tag.
+    // Example: 
+    // `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
+    function scrollToSection(event) {
+      event.preventDefault();
+      var $section = $($(this).attr('href')); 
+      $('html, body').animate({
+        scrollTop: $section.offset().top
+      }, 500);
+    }
+    $('[data-scroll]').on('click', scrollToSection);
+  }(jQuery));
+<nav id="navigation">
+
+        <a data-scroll class="hov-color-red" href="#red" >red</a>
+        <a data-scroll class="hov-color-green" href="#green">green</a>
+        <a data-scroll class="hov-color-blue" href="#blue">blue</a>
+      </nav>
+      
+      <section id="red" class="wide">
+        <h1>Red</h1>
+      </section>
+      
+      <section id="green" class="wide">
+        <h1>Green</h1>
+      </section>
+      
+      <section id="blue" class="wide">
+        <h1>Blue</h1>
+      </section>

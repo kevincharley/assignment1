@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scrollpage</title>
+    <link rel="stylesheet" href="./css/kk.css">
+    <style>
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+      
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+    <script>
+        function gn()
+        {
+            n=document.getElementById("name").value
+            document.getElementById("nam").innerHTML=n
+            p=document.getElementById("pass").value
+            document.getElementById("pa").innerHTML=p
+            
+        }
+        function nen()
+        {
+            r=document.getElementById("nn").value
+            document.getElementById("nnn").innerHTML=r
+            s=document.getElementById("us").value
+            document.getElementById("use").innerHTML=s
+            t=document.getElementById("pw").value
+            document.getElementById("psa").innerHTML=t
+            u=document.getElementById("branch").value
+            document.getElementById("br").innerHTML=u
+          
+        } 
+    </script>
+    <script>
+
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+  $(document).ready(function(){
+  $("p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+
+    </script>
+   
+    
+   
+</head>
+<body class="bk">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <ul class="navbar-nav">
+        <li class="navbar-item active">
+            <a data-scroll="" class="nav-link" href="#logi">login</a>
+        </li>
+        <li class="navbar-item">
+            <a data-scroll="" class="nav-link" href="#dat">data</a>
+        </li>
+        <li class="navbar-item">
+            <a class="nav-link" href="#mouse">jque1</a>
+        </li>
+        <li class="navbar-item">
+            <a class="nav-link" href="#fade">fade</a>
+           
+        </li>
+        <li class="navbar-item">
+                <a class="nav-link" href="#slide">slide</a>
+            </li>
+            <li class="navbar-item">
+                    <a class="nav-link" href="#ani">animated</a>
+                </li>
+    </ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+    <br>
+    <form>
+        <div id="logi">
+    <div class="container">
+        <div class="row">
+                <div class="col col-12 col-sm-12"> 
+                    <table class="table">
+                        <tr>
+                            <td>username</td>
+                            <td><input type="text" class="form-control" id="name"></td>
+                            <div><td id="nam"></td></div>
+                        </tr><TR>
+                        <td>password</td>
+                        <td><input type="password" class="form-control" id="pass"></td>
+                        <div><td id="pa"></td></div>
+                        </tr>
+                        <tr>
+                               
+                                <td><input type="button" value="reset" class="btn btn-warning"></td>
+                                
+                                <td><button type="button" class="btn btn-success" onclick="gn();">submit</button></td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+    
+            
+        
+        
+                <div class="col col-sm-12  col-12"> 
+                    <div id="dat">
+                    <table class="table">
+                        <tr>
+                            <td>name</td>
+                            <td><input type="text" class="form-control" id="nn"></td>
+                            <div><td id="nnn"></td></div>
+                        </tr>
+                        <tr><td>district</td>
+                        <td><select class="form-control" name="district" id="branch">
+                            <option value="alp">alp</option>
+                            <option value="idk">idk</option>
+                            <option value="ptn">ptn</option>
+                            <option value="thr">thr</option>
+                            <option value="ktm">ktm</option>
+                            <option value="ekm">ekm</option>
+                            <option value="kan">kan</option>
+                            <option value="koz">koz</option>
+                            <option value="tvm">tvm</option>
+                            <option value="kaz">kaz</option>
+                            <option value="vay">vay</option>
+                            <option value="plkd">plkd</option>
+                            <option value="kol">kol</option>
+                            <option value="mal">mal</option>
+                        </select></td>
+                    <div><td id="br"></td></div>
+                </tr>
+                        <tr>
+                        <td><input type="radio" name="gender" id="male">male</td>
+                    
+                    <td><input type="radio" name="gender" id="female">female</td></tr>
+                
+                        
+                        <tr>
+                                <td>username</td>
+                                <td><input type="text" class="form-control" id="us"></td>
+                                <div><td id="use"></td></div>
+                            </tr>
+                            <tr>
+                            <td>password</td>
+                            <td><input type="password" class="form-control" id="pw"></td>
+                            <div><td id="psa"></td></div>
+                        </tr>
+                                
+                        <tr>
+                                <td>confirm <input type="checkbox"></td>
+                            </tr>   
+                            <tr>
+                                    <td><button type="button" class="btn btn-warning" onclick="nen();">submit</button></td>
+                               
+                                <td><input type="button" value="register" class="btn btn-success"></td></tr>
+                                    
+                    </table>
+                </div>
+               
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="mouse">
+                <p>Click or move the mouse pointer over this paragraph.</p>
+
+            </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <div id="fade">
+        <p>Demonstrate fadeIn() with different parameters.</p>
+
+        <button>Click to fade in boxes</button><br><br>
+        
+        <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+        <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+        <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+      </div>
+      <div id="slide">
+            <div id="flip">Click to slide the panel down or up</div>
+            <div id="panel">Hello world!</div>
+            
+      </div>
+      <div id="ani" >
+            <button>Start Animation</button>
+
+            <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+            
+            <div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+            
+      </div>
+
+            </form>
+</body>
+</html>

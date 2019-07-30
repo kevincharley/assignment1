@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>  $("nav").find("a").click(function(e) {
+        e.preventDefault();
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top
+        });
+    });</script>
+</head>
+<body>
+   
+    
+        
+        <nav>
+            <ul>
+               <li>
+            <a href="#welcome">Welcome</a>
+        </li> 
+            <a href="#about">About</a>
+            <li>
+            <a href="#section3">Section 3</a>
+        </li>
+        </ul>
+        </nav>
+        
+        <div id="welcome">Welcome to this website</div>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+ 
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="about">About this website, and such</div>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <div id="section3">The third section</div>   
+</body>
+</html>
