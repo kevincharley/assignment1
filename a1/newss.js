@@ -37,14 +37,14 @@ $(document).ready(function(){
                {
             
                
-                  output+="<div class=card-deck><div class='card' style='width:400px'>";
-                  output+="<img class='card-img-top' src="+nws[i].urlToImage+"='Card image' style='width:100%'>";
+                  output+=" <div class='col col-12 col-sm-4'><div class='card-deck'><div class='card' style='width:400px'>";
+                  output+="<img class='card-img-top' src='"+nws[i].urlToImage+"' style='width:100%'>";
                     output+="<div class='card-body'>";
                     output+="<h4 class='card-title'>"+nws[i].title+"</h4>";
                     output+="<p class='card-text'>"+nws[i].description+"</p>";
-                    output+="<a href="+nws[i].url+" class='btn btn-primary'>readmore</a> </div> </div></div>";
-                  output+="<table><tr><td></td></tr></table>";
-                  $(".d2").html(output);
+                    output+="<a href="+nws[i].url+" class='btn btn-primary'>readmore</a> </div> </div></div></div>";
+                 // output+="<table><tr><td></td></tr></table>";
+                  $("#d2").html(output);
                 
                }
 
