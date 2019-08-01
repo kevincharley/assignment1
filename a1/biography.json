@@ -1,0 +1,30 @@
+[
+{            
+    "name":"Born A Crime: Stories from a South African Childhood",
+    "author":"by Trevor Noah",
+    "description":"One of the comedy world's fastest-rising stars tells his wild coming of age story during the twilight of apartheid in South Africa and the tumultuous days of freedom that followed",
+    "price":"Rs 499",
+    "cover":"b5.jpg"
+},
+{
+    "name":"I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban",
+    "author":"by Malala Yousafzai ",
+    "description":"I AM MALALA is the remarkable tale of a family uprooted by global terrorism, of the fight for girls' education, of a father who, himself a school owner, championed and encouraged his daughter to write and attend school, and of brave parents who have a fierce love for their daughter in a society that prizes sons",
+    "price":"Rs 390",
+    "cover":"b6.jpg"
+},
+{
+    "name":"Steve Jobs ",
+    "author":"by Walter Isaacson",
+    "description":"The book provides unique insights into thoughts and life of Steve Jobs, a man who literally transformed the digital lifestyle that billions of people all over the world have made part of their lives today. Written by renowned author Walter Isaacson, the autobiography is based on more than forty interviews with Steve Jobs. It took nearly two years to conduct all these interviews; some interesting conversations from family, friends, competitors and colleagues are also included in the a ",
+    "price":"Rs 150",
+    "cover":"b7.jpg"
+},
+{
+    "name":"Elon Musk ",
+    "author":"by Ashlee Vance",
+    "description":"The book captures the life and achievements of South African interpreter and innovator, Elon Musk, the brain behind series of successful enterprises such as PayPal, Tesla, SpaceX and Solarcity. The real-life inspiration of the Iron Man Series, Musk wants to be the saviour of the planet, send people into space and set up a colony on Mars.",
+    "price":"Rs 200",
+    "cover":"b8.webp"
+}
+]

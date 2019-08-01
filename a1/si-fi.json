@@ -1,0 +1,23 @@
+[
+{
+    "name":"The Hunger Games",
+    "author":"by Suzanne Collins",
+    "description":"Could you survive on your own, in the wild, with everyone out to make sure you don't live to see the morning?",
+    "price":"Rs 400",
+    "cover":"b2.jpg"
+},
+{
+    "name":"lord of the rings ",
+    "author":"by J.R.R. Tolkien",
+    "description":"One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them ",
+    "price":"Rs 550",
+    "cover":"b9.jpg"
+},
+{
+    "name":"Beloved ",
+    "author":"by Toni Morrison",
+    "description":"Staring unflinchingly into the abyss of slavery, this spellbinding novel transforms history into a story as powerful as Exodus and as intimate as a lullaby. ",
+    "price":"Rs 150",
+    "cover":"b10.jpg"
+}
+]

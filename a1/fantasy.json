@@ -1,0 +1,23 @@
+[
+    {
+        "name":"The Stars My Destination",
+        "author":"by Alfred Bester",
+        "description":" In this pulse-quickening novel, Alfred Bester imagines a future in which people jaunte a thousand miles with a single thought, where the rich barricade themselves in labyrinths and protect themselves with radioactive hit men—and where an inarticulate outcast is the most valuable and dangerous man alive",
+        "price":"Rs 390",
+        "cover":"b1.jpg"
+    },
+    {
+        "name":"The Hunger Games",
+        "author":"by Suzanne Collins",
+        "description":"Could you survive on your own, in the wild, with everyone out to make sure you don't live to see the morning?",
+        "price":"Rs 400",
+        "cover":"b2.jpg"
+    },
+    {
+        "name":"Harry Potter and the Order of the Phoenix",
+        "author":"by J.K. Rowling",
+        "description":"There is a door at the end of a silent corridor. And it’s haunting Harry Pottter’s dreams. Why else would he be waking in the middle of the night, screaming in terror?",
+        "price":"Rs 800",
+        "cover":"b3.jpg"
+    }
+]
